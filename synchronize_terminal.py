@@ -1,4 +1,5 @@
 from gi.repository import Gio
+import os
 
 # get current wallpaper uri
 def get_wallpaper():
