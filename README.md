@@ -34,7 +34,7 @@ seconds_interval = 5 # number of seconds before change wallpaper
 minutes_interval = 0 # number of minutes before change wallpaper
 hours_interval = 0 # number of hours before change wallpaper
 ```
-On the last step, add this code on you're `~/.bashrc` file :
+On the last step, add this code on you're `~/.bashrc` file and be sure to use the right path :
 ```bash
 if pgrep -f "wallpaper_scheduler.py" &>/dev/null; then
     python3 /absolute/path/to/your/ubuntu-wallpaper-slideshow/folder/synchronize_terminal.py
