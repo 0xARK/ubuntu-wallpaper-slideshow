@@ -4,10 +4,10 @@ import os
 
 # edit these variables to match with your needs
 # use only absolute path
-wallpapers_path = "/home/mateo/Images/Wallpapers"
-seconds_interval = 5
+wallpapers_path = "/absolute/path/to/your/wallpaper/folder"
+seconds_interval = 0
 minutes_interval = 0
-hours_interval = 0
+hours_interval = 1
 
 # get current wallpaper uri
 def get_wallpaper():
