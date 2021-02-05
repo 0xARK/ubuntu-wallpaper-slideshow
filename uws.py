@@ -16,4 +16,4 @@ parser.add_argument('-u', '--use', help="Filename of a wallpaper to use, present
 args = parser.parse_args()
 
 # pass args to the scheduler
-Sch(args)
+Sch(args)a
