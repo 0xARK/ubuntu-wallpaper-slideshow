@@ -39,8 +39,28 @@ On the last step, add this code on you're `~/.bashrc` file and be sure to use th
 if pgrep -f "wallpaper_scheduler.py" &>/dev/null; then
     python3 /absolute/path/to/your/ubuntu-wallpaper-slideshow/folder/synchronize_terminal.py
 else
-    nohup python3 /absolute/path/to/your/ubuntu-wallpaper-slideshow/folder/wallpaper_scheduler.py &
+    nohup python3 /absolute/path/to/your/ubuntu-wallpaper-slideshow/folder/wallpaper_scheduler.py >/dev/null 2>&1 &
 fi
+```
+## Usage
+
+A list of command to execute once process is running is available by typing `python3 uws.py -h` :
+
+```
+usage: uws.py [-h] [-c] [-r] [-s] [-u USE]
+
+UWS is a wallpaper change scheduler for ubuntu that matches the colours of the
+terminal with those of the current wallpaper.
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -c, --change       Change the current wallpaper and terminal theme, without
+                     reloading configuration parameters
+  -r, --restart      Start or restart the scheduler by reloading configuration
+                     variables. Use this command when you change one of them.
+  -s, --stop         Stop the current scheduler processus.
+  -u USE, --use USE  Filename of a wallpaper to use, present in the wallpaper
+                     directory.
 ```
 
 ## Contributors
