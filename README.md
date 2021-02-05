@@ -42,6 +42,7 @@ else
     nohup python3 /absolute/path/to/your/ubuntu-wallpaper-slideshow/folder/wallpaper_scheduler.py >/dev/null 2>&1 &
 fi
 ```
+Now, you can open a new shell and let the magic happen :)
 ## Usage
 
 A list of command to execute once process is running is available by typing `python3 uws.py -h` :
